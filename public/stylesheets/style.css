@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    font-family: ubuntu, sans-serif;
+}
+
+.left-section::-webkit-scrollbar{
+    display: none;
+}
