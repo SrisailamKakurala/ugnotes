@@ -7,3 +7,19 @@ body{
 .left-section::-webkit-scrollbar{
     display: none;
 }
+
+/* Hide the default text of the file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Style the label to resemble a button */
+label {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: rgb(247, 114, 196);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+

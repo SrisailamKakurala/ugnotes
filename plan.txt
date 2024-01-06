@@ -1,0 +1,17 @@
+what is this application for?
+-> this application is for downloading notes of ug
+
+
+user sholud be able to add subjects
+-> give an option for choosing the subject to add
+-> if the subject is not found they can create custom subject
+-> when ever a user adds a custom subject that subject should be added to database 
+   and will be shown in the option list from next time.
+
+
+what is the post schema?
+-> subject
+-> filename
+-> unitname
+
+

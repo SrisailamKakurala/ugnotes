@@ -1,0 +1,29 @@
+<% include ./partials/header.ejs %>
+    <main class="w-[100vw]  h-[90vh] bg-pink-300 flex-col p-8">
+        <div class="formContainer width-[100%] h-full bg-slate-100 p-8 shadow-inner rounded flex flex-col">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <!-- predefined subjects -->
+                <select name="oldsubject" id="" class="w-[100%] shadow-sm select p-2">
+                    <option value="">Subjects</option>
+                    <option value="MFCS">MFCS</option>
+                    <option value="COA or CAO">COA or CAO</option>
+                    <option value="PROBABILITY AND STATS">PROBABILITY AND STATS</option>
+                    <option value="COMPUTER NETWORKS">COMPUTER NETWORKS</option>
+                </select>
+
+                <h1 class="ml-[49.5%] mt-2 text-slate-500">or</h1>
+                <!-- new subjects -->
+                <input type="text" name="newsubject" class="w-[100%] shadow-sm newsubject p-2 mt-2"
+                    placeholder="Enter the subject name ">
+                <input type="text" name="unitname" class="w-[100%] shadow-sm newsubject p-2 mt-[100px]"
+                    placeholder="Enter the unit name ">
+                <div class="w-[100%] py-5 items-center mt-16 flex justify-between">
+                    <label for="file">Choose a PDF file:</label>
+                    <input type="file" id="file" name="file" accept=".pdf">
+                    <input type="submit"
+                        class="ml-[47%] p-2 bg-slate-800 hover:bg-slate-700 cursor-pointer text-white font-bold text-lg rounded">
+                </div>
+            </form>
+        </div>
+    </main>
+<% include ./partials/footer.ejs %>
